@@ -1,0 +1,7 @@
+
+
+
+fpm -s dir -t deb -n unifispot -v 0.1 -d "python,python-dev,apache2,libapache2-mod-wsgi"  --after-install /home/user/projects/unifispot/post_install.sh -a i686 /var/www/unifispot/=/var/www/unifispot 
+
+fpm -s dir -t deb -n unifispot -v 0.1 -d "python,python-dev,apache2,libapache2-mod-wsgi"  --after-install /home/user/projects/unifispot/post_install.sh  /var/www/unifispot/=/var/www/unifispot 
+

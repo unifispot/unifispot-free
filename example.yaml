@@ -1,0 +1,47 @@
+LANDINGSITE:
+    unifihost       : '127.0.0.1'
+    unifiadmin      : 'ubnt'
+    unifipass       : 'ubnt'
+    unifiversion    : 'v4'
+    unifiport       : '8443'
+    unifisiteid     : 'qnao074x'      ##need to get site ID used by unifi controller to identify the site.
+                                      #For example if the URL used to access the site is https://192.168.1.1:8443/manage/s/qnao074x/dashboar
+    fbappid         : ''
+    fbappname       : ''
+    fbappsecret     : ''
+    enablefblike    : 1        #1 - ask user to like the page after logging in,if user decides to skip, he will be asked on every login till he likes
+    fbpageurl       : 'https://www.facebook.com/Unifispot-1652553388349756'
+    loginmethod     : 1     #1 - Facebook Login, 2 - Email login
+    redirecturl     : 'https://www.facebook.com/Unifispot-1652553388349756'  #URL to which guest will be redirected after login
+    adminusername   : 'admin'
+    adminpassword   : 'password'
+    formfields      : ['firstname','lastname','email']  #only three fields are available
+
+
+#---------------landing page configurations
+LANDINGPAGE:
+    logofile        : '/static/img/logo.png'     #Logo file files should be kept in static/img folder 
+    bgfile         : '/static/img/bg.jpg'       #background file used 
+    bgcolor        : '#ffffff'
+    headerlink     : ''
+    basefont       : "Verdana sans-serif"
+    topbgcolor     : '#ffffff'
+    toptextcolor   : ''
+    topfont        : "Verdana sans-serif"
+    toptextcont    : ''
+    middlebgcolor  : '#ffffff'
+    middletextcolor: ''
+    middlefont     : "Verdana sans-serif"
+    bottombgcolor  : '#ffffff'
+    bottomtextcolor: ''
+    bottomfont     : "Verdana sans-serif"
+    bottomtextcont : ''
+    footerbgcolor  : '#ffffff'
+    footertextcolor: ''
+    footerfont     : "Verdana sans-serif"
+    footertextcont : ''
+    btnbgcolor     : ''
+    btntxtcolor    : ''
+    btnlinecolor   : ''
+    tosfile        : ''
+    copytextcont   : ''

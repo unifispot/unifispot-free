@@ -1,0 +1,267 @@
+/*==========  Mobile First Method  ==========*/
+
+	/* Custom, iPhone Retina */ 
+	@media only screen and (min-width : 320px) and (max-width : 470px) {
+	
+	  .container {
+			width: 300px;
+			font-size: 12px;
+		}
+		  .vertical-center:before {
+		    height: auto;
+		    /* Or */
+		    display: none;
+		  }	  
+		.col-top-content p{
+			font-size: 15px;!important
+		}
+		.form-label {
+		   padding-right: 0 !important;
+		   margin-right: 0 !important;
+		   line-height:10px !important;
+		   font-size:12px !important;
+		}
+		.form-input {
+		   padding-left: 0 !important;
+		   margin-left: 0 !important;
+		   font-size:10px !important;
+		}
+		.form-input input{
+			line-height: 1.2 !important;
+			font-size: 12px;
+			padding:0;
+			height: 20px;
+		}
+		.btn-guest {
+			font-size:12px !important;
+			line-height: 1.1 !important;
+		}
+		.circle-inner {
+			border:2px solid;
+			margin:5% 4% 4% 5%;
+		}
+		.row-header{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		
+		}
+		.client-logo{
+			padding-top:5px;
+			margin:1%;
+		}
+		.row-top-content p{
+			font-size:15px;
+		}
+		.row-footer p{
+			font-size:15px;
+		}
+		.circle {
+			width:60px;
+			height:60px;
+		}
+	}
+
+	/* Extra Small Devices, Phones */ 
+	@media only screen and (min-width : 480px) {
+	
+	  .container {
+			width: 400px;
+			font-size: 12px;
+		}	  
+                  .vertical-center:before {
+                    height: auto;
+                    /* Or */
+                    display: none;
+                  }
+
+		.col-top-content p{
+			font-size: 15px;!important
+		}
+		.form-label {
+		   padding-right: 0 !important;
+		   margin-right: 0 !important;
+		}
+		.form-input {
+		   padding-left: 0 !important;
+		   margin-left: 0 !important;
+		}
+		.btn-guest {
+			font-size:12px !important;
+			line-height: 1.1 !important;
+		}
+		.circle-inner {
+			border:3px solid;
+			margin:6%;
+		}
+		.row-header{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		
+		}
+		.client-logo{
+			
+			margin:2%;
+			
+		}
+		.row-top-content p{
+			font-size:15px;
+		}
+		.bottom-text{
+			font-size:14px;
+		}
+		.circle {
+			width:100px;
+			height:100px;
+		}
+	}
+
+	/* Small Devices, Tablets */
+	@media only screen and (min-width : 768px) {
+
+	
+	  .container {
+			width: 400px;
+			font-size: 12px;
+		}	  
+		.row-top-content {
+			font-size: 18px;
+		}
+		.form-label {
+		   padding-right: 15px !important;
+		   margin-right: 15px!important;
+		}
+		.form-input {
+		   padding-left: 15px !important;
+		   margin-left: 15px !important;
+		}
+		.btn-guest {
+			font-size:18px !important;
+			line-height: 1.1 !important;
+		}
+		.circle-inner {
+			border:5px solid;
+			margin:5% 4% 5% 4%;
+		}
+		.row-header{
+			padding-top: 10px;
+			padding-bottom: 10px;
+		
+		}
+		.client-logo{
+			padding-top:5px;
+			margin:1%;
+		}
+		.row-top-content p{
+			font-size:20px;
+		}
+		.bottom-text{
+			font-size:12px;
+		}
+		.bottom-text1{
+			font-size:15px;
+		}
+		.circle {
+			width:100px;
+			height:100px;
+		}
+	
+	}
+
+	/* Medium Devices, Desktops */
+	@media only screen and (min-width : 992px) {		
+	  .container {
+			width: 400px;
+			font-size: 18px;
+		}	  
+		.row-top-content {
+			font-size: 22px;
+		}
+		.form-label {
+		   padding-right: 15px !important;
+		   margin-right: 15px!important;
+		}
+		.form-input {
+		   padding-left: 15px !important;
+		   margin-left: 15px !important;
+		}
+		.circle-inner {
+			border:5px solid;
+			margin:5% 4% 4% 5%;
+		}
+		.row-header{
+			padding-top: 20px;
+			padding-bottom: 20px;
+		
+		}
+		.client-logo{
+			padding-top:10px;
+			margin:1%;
+		}
+		.row-top-content p{
+			font-size:20px;
+		}
+		.circle {
+			width:150px;
+			height:150px;
+		}
+}
+
+	/* Large Devices, Wide Screens */
+	@media only screen and (min-width : 1200px) {
+		
+		.container {
+			width: 400px;
+			font-size: 18px;
+		}	  
+		.row-top-content {
+			font-size: 12px;
+		}
+		.form-label {
+		   padding-right: 5px !important;
+		   margin-right: 5px!important;
+		}
+		.form-input {
+		   padding-left: 5px !important;
+		   margin-left: 5px !important;
+		}
+		.circle-inner {
+			border:5px solid;
+			margin:5%;
+		}
+		.row-header{
+			padding-top: 20px;
+			padding-bottom: 20px;
+			
+		
+		}
+		.client-logo{
+			padding-top:10px;
+			margin:1%;
+
+		}
+		.row-top-content p{
+			font-size:14px;
+		}
+		.circle {
+			width:100px;
+			height:100px;
+		}
+		.client-logo{
+			
+		}
+	}
+	ul.inline > li, ol.inline > li {
+		display: inline-block;
+		padding-right: 5px;
+		padding-left: 5px;
+		text-align: center;	
+		list-style-type: none;
+
+	}
+	.li-right-border{
+		border-right:1px  solid;
+	}
+@font-face {
+    font-family: "MrsEavesXLSerNarOT-Reg";
+    src: url({{ url_for('static', filename='static/fonts/MrsEavesXLSerNarOT-Reg.woff')}}) format('woff');
+}

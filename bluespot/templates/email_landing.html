@@ -1,0 +1,232 @@
+{% from "newmacros.html" import render_guest %}
+<html>
+<head>
+    <title></title>
+    <meta name="viewport" content="width=device-width, target-densitydpi=device-dpi, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <!-- These are Open Graph tags.-->
+    <meta property="fb:app_id" content="{{ app_id }}" />
+    <!-- Bootstrap -->
+    
+
+    <!-- Botstrap 3.0.2 --> 
+        <link href="{{ url_for('static', filename='guest/css/bootstrap.min.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url_for('static', filename='guest/css/bootstrap-datetimepicker.min.css')}}" rel="stylesheet" type="text/css" />
+        <!-- font Awesome -->
+        <link href="{{ url_for('static', filename='guest/css/font-awesome.css')}}" rel="stylesheet" type="text/css" />
+        <link href="{{ url_for('static', filename='guest/css/landing.css')}}" rel="stylesheet" type="text/css" />
+    
+	<style>
+
+/* http://css-tricks.com/perfect-full-page-background-image/ */
+html {
+	background: url( {%if clientpage.bgfile%}{{  clientpage['bgfile']}}{%endif%}) no-repeat center center fixed; 
+	-webkit-background-size: 100% 100% !important;
+	-moz-background-size: 100% 100% !important;
+	-o-background-size: 100% 100% !important;
+	background-size: 100% 100% !important;
+}
+html,body,section{height:100%;}
+body {	
+
+	font-family: "Open Sans",serif;
+	background: transparent;
+}
+
+.bg-landing{
+
+}
+.circle {
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 50%;
+	position: relative;
+	padding-top:50%;
+	background: {{clientpage['wifilogocolor']}};
+}
+
+.circle-border {
+	
+}
+
+.circle-solid{
+	background-color: whitesmoke;
+}
+
+.circle:before {
+	content: "";
+	display: block;
+	padding-top: 100%;
+}
+
+.circle-inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-align: center;
+	
+	border-radius: 50%;
+	padding:12%;
+	border-color:{{clientpage['bgcolor']}};
+}
+.circle-inner img{
+
+
+}
+.score-text {
+
+	display: block;
+	margin: 20px;
+}
+.img-responsive.img-center {
+    margin: 0 auto;
+} 
+/*------------- Circle wifi logo styles -------------end */
+
+.row-header{
+	background-color: {{clientpage['bgcolor']}};
+	font-family:{{clientpage['base_font']}}
+	padding-top: 20px;
+	padding-bottm: 20px;
+}
+.client-logo{
+
+}
+.row-top-content{
+
+	color: {{clientpage['toptextcolor']}};
+	background-color: {{clientpage['topbgcolor']}};
+	padding-bottom: 10px;
+	padding-top: 10px;
+	font-family:{{clientpage['topfont']}}
+}
+.row-middle-content{
+	padding-top: 10px;	
+	color: {{clientpage['middletextcolor']}};
+	background-color: {{clientpage['middlebgcolor']}};
+	font-family:{{clientpage['middlefont']}}
+
+}
+.input-guest{
+	color: {{clientpage['middletextcolor']}};
+	background-color: {{clientpage['middlebgcolor']}};
+    border-color: {{clientpage['middletextcolor']}};
+	font-family:{{clientpage['middlefont']}}
+}
+.row-bottom {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background-color: {{clientpage['bottombgcolor']}};
+	color:{{clientpage['bottomtextcolor']}};
+	font-family:{{clientpage['bottomfont']}}
+}		
+.row-bottom a{
+	color:{{clientpage['bottomtextcolor']}};
+	font-family:{{clientpage['bottomfont']}}
+}				
+.row-footer {
+	background-color: {{clientpage['footerbgcolor']}};
+	padding-top: 5px;
+	padding-bottom: 5px;
+	color:{{clientpage['footertextcolor']}};
+	font-family:{{clientpage['footerfont']}}
+}
+
+.btn-guest {
+    background-color: {{clientpage['btnbgcolor']}};
+    border-color: {{clientpage['btnlinecolor']}};
+    color: {{clientpage['btntxtcolor']}};
+	border-radius: 6px;
+    font-size: 18px;
+    line-height: 1.33;
+    padding: 10px 16px;
+	font-family:{{clientpage['bottomfont']}}
+}
+ul{
+	list-style-type: none;
+
+}
+.btn-xlarge {
+    padding: 20px 38px;
+    font-size: 22px; //change this to your desired size
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div class="container bg-landing">
+		<div class="row row-header">
+			<div class="col-md-12   col-sm-12 col-xs-12 ">	
+				<div class="row client-logo"> 
+					<img src="{%if clientpage['logofile']%}{{  clientpage['logofile'] }}{%endif%}" class="img-responsive center-block">
+				</div>
+			</div>							
+		</div><!-- //header-->
+		<div class="row row-top-content">
+			<div class="col-top-content">				
+				<p class="midle-top-cont text-center">{{clientpage['toptextcont|safe']}}</p>
+			</div>
+		</div><!-- //top content-->
+        <div class="row row-middle-content ">
+            <form class="form-horizontal" method="POST" action="">
+                {{render_guest(email_form)}}
+            
+        </div><!-- //middle content-->
+		<div class="row row-bottom">			
+			<div id="login-buttons">	
+					<p class="text-center login-button">
+	                    <button type="submit" class="btn btn-guest " id='loginemail' >Login</button>
+					</p>          
+            </div>
+			<div class="col-xs-offset-2 col-sm-offset-3 col-md-offset-3">
+					<p class="bottom-text"> <input type="checkbox" id="agreetos" value="">
+					By Clicking you are agreeing to our 
+					{% if clientpage.tosfile %} 
+					<a href="{{ url_for('static', filename='uploads/'+clientpage.tosfile)}}"><u>USER AGREEMENT</u></a>
+					{% else %}USER AGREEMENT{%endif%}</p><p class="bottom-text" ></p>
+			</div>
+		</div><!-- //bottom content-->
+		<div class="row row-footer">
+			<ul class=" text-center">
+                {{clientpage['copytextcont|safe']}}
+			</ul>
+            <!-- License start you are free to modify the source as long as below content is kept untouched -->
+            <div class=" text-center page-footer-inner">
+             Powered by <a href="http://www.unifispot.com" title="Captive portal with Socil Login and Data collection" target="_blank">Unifispot</a>
+            </div>
+		</div><!-- //footer content-->
+
+	</div> <!-- //container -->
+	 <!-- jQuery 2.0.2 -->
+     <script src="{{ url_for('static', filename='guest/js/jquery-2.0.2.min.js')}}" type="text/javascript"></script>
+        <!-- jQuery UI 1.10.3 -->
+       <script src="{{ url_for('static', filename='guest/js/jquery-ui-1.10.3.min.js')}}" type="text/javascript"></script>
+        <!-- Bootstrap -->
+        <script src="{{ url_for('static', filename='guest/js/bootstrap.min.js')}}" type="text/javascript"></script>
+        <script src="{{ url_for('static', filename='guest/js/jquery.blockui.min.js')}}" type="text/javascript"></script>
+        
+	<script type="text/javascript">
+	$(document).ready(function() {
+        $('#loginemail').click(function(){
+            if ($("#agreetos").prop('checked') == true){
+
+                    //document.getElementById("form id").submit();
+                    return true;
+                
+            }
+            else{
+                alert("Please accept the terms before proceeding");
+                return false;
+            }                
+        });
+    });
+	</script>
+</body>
+</html>

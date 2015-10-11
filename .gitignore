@@ -1,0 +1,11 @@
+*.pyc
+instance/*
+migrations/*
+migrations_test/*
+.project
+.pydevproject
+*.swp
+*.log
+config/database.db
+
+

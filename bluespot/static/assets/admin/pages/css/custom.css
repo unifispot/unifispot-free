@@ -1,0 +1,21 @@
+.stars {
+  padding: 0;
+  margin: 0 0 0px 0;
+}
+.stars li {
+  padding: 0;
+}
+.list-inline>li {
+  display: inline-block;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.stars li i {
+  color: #f8be2c;
+  cursor: pointer;
+  font-size: 12px;
+}
+.modal.large {
+    width: 80%; /* respsonsive width */
+    margin-left:-40%; /* width/2) */ 
+}
