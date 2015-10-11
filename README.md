@@ -25,7 +25,8 @@ Installation From Source
 1. Clone git repository to your machine.
 2. Install all the dependencies.  
 (pip -r requirements.txt)
-3. Deploy the application using wsgi. Reffer to http://flask.pocoo.org/docs/0.10/deploying/ for more details.
+3. Initilize Database by executing rebuild.sh
+4. Deploy the application using wsgi. Reffer to http://flask.pocoo.org/docs/0.10/deploying/ for more details.
    Example configurations can be found in unifispot.conf and unifispot.wsgi
 
 
