@@ -1,8 +1,6 @@
 import os
 import sys
 
-activate_this = '/var/www/unifispot/env/bin/activate_this.py'
-execfile(activate_this, dict(__file__=activate_this))
 
 path = os.path.join(os.path.dirname(__file__), os.pardir)
 if path not in sys.path:
