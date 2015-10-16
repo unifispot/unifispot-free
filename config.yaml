@@ -11,11 +11,11 @@ LANDINGSITE:
     fbappsecret     : ''
     enablefblike    : 1        #1 - ask user to like the page after logging in,if user decides to skip, he will be asked on every login till he likes
     fbpageurl       : 'https://www.facebook.com/Unifispot-1652553388349756'
-    loginmethod     : 1     #1 - Facebook Login, 2 - Email login
+    loginmethod     : 2     #1 - Facebook Login, 2 - Email login
     redirecturl     : 'https://www.facebook.com/Unifispot-1652553388349756'  #URL to which guest will be redirected after login
     adminusername   : 'admin'
     adminpassword   : 'password'
-    formfields      : ['firstname','lastname','email']  #only three fields are available
+    formfields      : ['firstname','lastname','email','phonenumber']  #only four fields are available
 
 
 #---------------landing page configurations
