@@ -13,11 +13,11 @@ Requirements
 Installation
 ============
 
-Ubuntu
-------
-I have created .deb packages for Ubuntu 32/64 bit systems. Which can be installed using dpkg tools 
+Reffer to our blog as well 
 
-Packages are available in http://download.unifispot.com/ubuntu/
+1. https://blog.unifispot.com/2015/10/how-to-enable-facebook-login-in-unifi-hotspot-portal-for-ubuntu-14-04/
+
+
 
 
 Installation From Source
